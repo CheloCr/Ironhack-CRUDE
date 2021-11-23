@@ -42,7 +42,6 @@ exports.createBook = async (req, res) => {
 
 	const newBookCreated = await Book.create({title, author, description, rating})
 
-	console.log(newBookCreated)
 
 	res.redirect("/books")
 
